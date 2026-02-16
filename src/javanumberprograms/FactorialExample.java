@@ -60,3 +60,43 @@ public class FactorialExample {
   	
   
  */
+
+
+/* We created a separate method to calculate factorial and then used it inside main().
+
+So instead of writing factorial logic inside main, we kept it in a method.
+
+class FactorialMethod {
+
+static int factorial(int num) {
+    int fact = 1;
+
+    for(int i = 1; i <= num; i++) {
+        fact = fact * i;
+    }
+
+    return fact;
+}
+
+public static void main(String[] args) {
+    int result = factorial(5);
+    System.out.println(result);
+}
+}
+
+
+main() starts
+   ↓
+calls factorial(5)
+   ↓
+factorial method runs
+   ↓
+calculates 120
+   ↓
+returns 120
+   ↓
+main() receives 120
+   ↓
+prints 120
+
+*/
